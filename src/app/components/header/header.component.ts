@@ -1,6 +1,9 @@
 import { Component } from "@angular/core";
 
 @Component({
+    //    selector : '[app-header]',
+        // selector : '.app-header',
+        // selector : '#app-header',
     selector: 'app-header',
     // template: '<h1>Welcome To EkartAngular</h1>'
     templateUrl: './header.component.html',
