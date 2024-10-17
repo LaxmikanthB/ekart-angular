@@ -2,10 +2,24 @@
 <p>Cost : 999$</p>
 <p>Color : black</p>
 <p>Discount : 8.5%</p> -->
-
+<!-- <img src="../../../assets/images/iphone.png"> -->
+ <!-- <img src="{{ product.pImage}}"> -->
+  <img [src]="product.pImage">
 <p>Name : {{ product.name }}</p>
 <p>Cost : {{ '$' + product.price }}</p>
 <p>Color : {{ product.color }}</p>
 <!-- <p>Price After Discount : {{product.price - (product.price * product.discount /100)}}</p> -->
  <p>Price After Discount : {{getDiscountedPrice().toFixed(2)}} </p>
  <p>{{ product.inStock > 0 ? 'Only ' + product.inStock + ' items left' : 'out of stock'}}</p>
+ <button [disabled]="!(product.inStock>0)" style="margin-left : 50px;">Buy Now</button>
+
+
+
+
+
+
+
+
+
+
+ <!-- * disabled, hidden, checked ------- property binding -->
